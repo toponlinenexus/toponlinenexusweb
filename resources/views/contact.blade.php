@@ -31,7 +31,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                            <h4 class="text-primary mb-0">+92 336 5554271</h4>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Email to get free quote</h5>
-                            <h4 class="text-primary mb-0">info@example.com</h4>
+                            <h4 class="text-primary mb-0">sales@toponlinenexus.com</h4>
                         </div>
                     </div>
                 </div>
@@ -55,30 +55,50 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Visit our office</h5>
-                            <h4 class="text-primary mb-0">123 Street, NY, USA</h4>
+                            <h4 class="text-primary mb-0">Block 13 A Gulshan-e-Iqbal, Karachi, Pakistan</h4>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form>
+                    <form action="{{ route('contact.submit') }}" method="POST">
+                        @csrf
+
+                        @if (session('success'))
+                            <div class="alert alert-success mb-3">{{ session('success') }}</div>
+                        @endif
+
+                        @if (session('error'))
+                            <div class="alert alert-danger mb-3">{{ session('error') }}</div>
+                        @endif
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger mb-3">
+                                <ul class="mb-0 ps-3">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Your Name"
-                                    style="height: 55px;">
+                                <input type="text" name="name" class="form-control border-0 bg-light px-4" placeholder="Your Name"
+                                    style="height: 55px;" value="{{ old('name') }}" required>
                             </div>
                             <div class="col-md-6">
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="Your Email"
-                                    style="height: 55px;">
+                                <input type="email" name="email" class="form-control border-0 bg-light px-4" placeholder="Your Email"
+                                    style="height: 55px;" value="{{ old('email') }}" required>
                             </div>
                             <div class="col-12">
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="Subject"
-                                    style="height: 55px;">
+                                <input type="text" name="subject" class="form-control border-0 bg-light px-4" placeholder="Subject"
+                                    style="height: 55px;" value="{{ old('subject') }}" required>
                             </div>
                             <div class="col-12">
-                                <textarea class="form-control border-0 bg-light px-4 py-3" rows="4"
-                                    placeholder="Message"></textarea>
+                                <textarea name="message" class="form-control border-0 bg-light px-4 py-3" rows="4"
+                                    placeholder="Message" required>{{ old('message') }}</textarea>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
@@ -88,7 +108,7 @@
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                        src="https://maps.google.com/maps?q=Block+13+A+Gulshan-e-Iqbal,+Karachi,+Pakistan&t=&z=14&ie=UTF8&iwloc=&output=embed"
                         frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>

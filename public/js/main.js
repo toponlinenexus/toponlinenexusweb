@@ -73,6 +73,30 @@
         return false;
     });
 
+    // Smooth scroll to quote section
+    $('a[href="#request-quote"], a[href*="#request-quote"]').on('click', function (e) {
+        var href = $(this).attr('href');
+        var isSamePage = href === '#request-quote';
+
+        if (isSamePage) {
+            e.preventDefault();
+            scrollToQuote();
+        }
+    });
+
+    if (window.location.hash === '#request-quote') {
+        setTimeout(scrollToQuote, 300);
+    }
+
+    function scrollToQuote() {
+        var target = $('#request-quote');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top - 80
+            }, 1000, 'easeInOutExpo');
+        }
+    }
+
 
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
