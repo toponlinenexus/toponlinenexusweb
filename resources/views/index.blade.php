@@ -7,9 +7,9 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="carousel-slide-image" src="img/carousel-1.jpg" alt="Digital Marketing Services">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
+                        <div class="p-3 carousel-content" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Digital Marketing</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Digital Marketing Services</h1>
                             <a href="#request-quote" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free
@@ -20,9 +20,9 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.webp" alt="Image">
+                    <img class="carousel-slide-image" src="img/carousel-2.webp" alt="Web Development Services">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
+                        <div class="p-3 carousel-content" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">Web Development</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Web Development Services</h1>
                             <a href="#request-quote" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free
@@ -33,9 +33,9 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-3.webp" alt="Image">
+                    <img class="carousel-slide-image" src="img/carousel-3.webp" alt="AI Integration Services">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
+                        <div class="p-3 carousel-content" style="max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown">AI Integration</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">AI Integration Services</h1>
                             <a href="#request-quote" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Free

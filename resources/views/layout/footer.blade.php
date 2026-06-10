@@ -2,13 +2,13 @@
     <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
+                <div class="col-12 col-xl-4 footer-about mx-auto mx-xl-0">
                     <div
-                        class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                        <a href="{{ url('/') }}" class="navbar-brand">
-                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i>TopOnlineNexus</h1>
+                        class="footer-brand-panel d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4 p-md-5">
+                        <a href="{{ url('/') }}" class="navbar-brand footer-brand-link">
+                            <h2 class="footer-brand-title m-0 text-white"><i class="fa fa-user-tie me-2" aria-hidden="true"></i>TopOnlineNexus</h2>
                         </a>
-                        <p class="mt-3 mb-4">We delivers innovative software solutions, including web development services, digital marketing services, WordPress website builder Services, YouTube thumbnail, social media services and Web Hosting services. We empower businesses with cutting-edge technology, professional expertise, and reliable support to drive digital growth and long-term success.</p>
+                        <p class="footer-brand-description mt-3 mb-0">We deliver innovative software solutions, including web development services, digital marketing services, WordPress website builder services, YouTube thumbnails, social media services, and web hosting services. We empower businesses with cutting-edge technology, professional expertise, and reliable support to drive digital growth and long-term success.</p>
                         <!-- <form action="">
                             <div class="input-group">
                                 <input type="text" class="form-control border-white p-3" placeholder="Your Email">
@@ -17,9 +17,9 @@
                         </form> -->
                     </div>
                 </div>
-                <div class="col-lg-8 col-md-6">
+                <div class="col-12 col-xl-8 footer-links-section">
                     <div class="row gx-5">
-                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                        <div class="col-lg-4 col-md-12 pt-4 pt-xl-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">Get In Touch</h3>
                             </div>
@@ -47,7 +47,7 @@
                                         class="fab fa-instagram fw-normal"></i></a>
                             </div> -->
                         </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="col-lg-4 col-md-12 pt-0 pt-xl-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">Quick Links</h3>
                             </div>
@@ -64,7 +64,7 @@
                                         class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                        <div class="col-lg-4 col-md-12 pt-0 pt-xl-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
                                 <h3 class="text-light mb-0">Popular Links</h3>
                             </div>
@@ -89,7 +89,7 @@
     <div class="container-fluid text-white" style="background: #061429;">
         <div class="container text-center">
             <div class="row justify-content-end">
-                <div class="col-lg-8 col-md-6">
+                <div class="col-12 col-xl-8">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
                         <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">TopOnlineNexus</a>. All
                             Rights Reserved.
