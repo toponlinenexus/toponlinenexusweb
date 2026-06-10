@@ -7,6 +7,7 @@ use App\Http\Requests\QuoteRequest;
 use App\Services\ContactMailService;
 use App\Services\QuoteMailService;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Support\Facades\Log;
 use PHPMailer\PHPMailer\Exception as MailException;
 
 class HomeController extends Controller
@@ -87,18 +88,38 @@ class HomeController extends Controller
     function submitContact(ContactRequest $request, ContactMailService $contactMailService): RedirectResponse
     {
         try {
-            $contactMailService->send($request->validated());
+            $contactMailService->send(
+                $request->validated(),
+                $request->file('attachment')
+            );
 
             return redirect()
                 ->to(url('contact'))
                 ->with('success', 'Thank you! Your message has been sent successfully. We will get back to you soon.');
         } catch (MailException $e) {
+            Log::error('Contact form email failed.', [
+                'error' => $e->getMessage(),
+                'email' => $request->input('email'),
+                'has_attachment' => $request->hasFile('attachment'),
+            ]);
             report($e);
 
             return redirect()
                 ->to(url('contact'))
-                ->withInput()
+                ->withInput($request->except('attachment'))
                 ->with('error', 'Sorry, we could not send your message right now. Please try again or call us at +92 336 5554271.');
+        } catch (\Throwable $e) {
+            Log::error('Contact form submission failed.', [
+                'error' => $e->getMessage(),
+                'email' => $request->input('email'),
+                'has_attachment' => $request->hasFile('attachment'),
+            ]);
+            report($e);
+
+            return redirect()
+                ->to(url('contact'))
+                ->withInput($request->except('attachment'))
+                ->with('error', 'Sorry, we could not process your submission. Please check your file and try again, or call us at +92 336 5554271.');
         }
     }
 }

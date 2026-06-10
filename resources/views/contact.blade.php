@@ -62,7 +62,7 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
-                    <form action="{{ route('contact.submit') }}" method="POST">
+                    <form action="{{ route('contact.submit') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         @if (session('success'))
@@ -99,6 +99,18 @@
                             <div class="col-12">
                                 <textarea name="message" class="form-control border-0 bg-light px-4 py-3" rows="4"
                                     placeholder="Message" required>{{ old('message') }}</textarea>
+                            </div>
+                            <div class="col-12">
+                                <label for="attachment" class="form-label mb-2">Attachment (Resume, Portfolio, Screenshot, or Project Document)</label>
+                                <input type="file" name="attachment" id="attachment"
+                                    class="form-control border-0 bg-light px-4 py-2 @error('attachment') is-invalid @enderror"
+                                    accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
+                                <small class="form-text text-muted d-block mt-2">
+                                    Accepted formats: PDF, DOC, DOCX, JPG, JPEG, PNG. Maximum file size: 10 MB.
+                                </small>
+                                @error('attachment')
+                                    <div class="invalid-feedback d-block">{{ $message }}</div>
+                                @enderror
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>

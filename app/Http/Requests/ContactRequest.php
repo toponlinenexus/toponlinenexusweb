@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rules\File;
 
 class ContactRequest extends FormRequest
 {
@@ -28,6 +29,10 @@ class ContactRequest extends FormRequest
             'email' => ['required', 'email', 'max:255'],
             'subject' => ['required', 'string', 'max:255'],
             'message' => ['required', 'string', 'max:5000'],
+            'attachment' => [
+                'nullable',
+                File::types(['pdf', 'doc', 'docx', 'jpg', 'jpeg', 'png'])->max(10240),
+            ],
         ];
     }
 
@@ -39,6 +44,10 @@ class ContactRequest extends FormRequest
             'email.email' => 'Please enter a valid email address.',
             'subject.required' => 'Please enter a subject.',
             'message.required' => 'Please enter your message.',
+            'attachment.file' => 'Please upload a valid file.',
+            'attachment.max' => 'The file must not be larger than 10 MB.',
+            'attachment.mimes' => 'Accepted formats: PDF, DOC, DOCX, JPG, JPEG, PNG.',
+            'attachment.extensions' => 'Accepted formats: PDF, DOC, DOCX, JPG, JPEG, PNG.',
         ];
     }
 }
