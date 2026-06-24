@@ -8,7 +8,7 @@
                         <a href="{{ url('/') }}" class="navbar-brand footer-brand-link">
                             <h2 class="footer-brand-title m-0 text-white"><i class="fa fa-user-tie me-2" aria-hidden="true"></i>TopOnlineNexus</h2>
                         </a>
-                        <p class="footer-brand-description mt-3 mb-0">We deliver innovative software solutions, including web development services, digital marketing services, WordPress website builder services, YouTube thumbnails, social media services, and web hosting services. We empower businesses with cutting-edge technology, professional expertise, and reliable support to drive digital growth and long-term success.</p>
+                        <p class="footer-brand-description mt-3 mb-0">We deliver innovative software solutions, including AI integration, web development services, digital marketing services, WordPress website builder services, YouTube thumbnails, social media services, and web hosting services. We empower businesses with cutting-edge technology, professional expertise, and reliable support to drive digital growth and long-term success.</p>
                         <!-- <form action="">
                             <div class="input-group">
                                 <input type="text" class="form-control border-white p-3" placeholder="Your Email">
@@ -66,19 +66,19 @@
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-xl-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
+                                <h3 class="text-light mb-0">Our Services</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="{{ url('/') }}"><i
-                                        class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="{{ url('about-us') }}"><i
-                                        class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="{{ url('services') }}"><i
-                                        class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="{{ url('careers') }}"><i
-                                        class="bi bi-arrow-right text-primary me-2"></i>Careers</a>
-                                <a class="text-light" href="{{ url('contact') }}"><i
-                                        class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                <a class="text-light mb-2" href="{{ url('services/ai-integration') }}"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>AI Integration</a>
+                                <a class="text-light mb-2" href="{{ url('services/data-analytics') }}"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Data Analytics</a>
+                                <a class="text-light mb-2" href="{{ url('services/web-development') }}"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Web Development</a>
+                                <a class="text-light mb-2" href="{{ url('services/apps-development') }}"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Apps Development</a>
+                                <a class="text-light" href="{{ url('services/digital-marketing') }}"><i
+                                        class="bi bi-arrow-right text-primary me-2"></i>Digital Marketing</a>
                             </div>
                         </div>
                     </div>

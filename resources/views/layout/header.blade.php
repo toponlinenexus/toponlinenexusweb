@@ -11,7 +11,7 @@
                 <div class="navbar-nav ms-auto py-0">
                     <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
                     <a href="{{ url('about-us') }}" class="nav-item nav-link">About</a>
-                    <a href="{{ url('services') }}" class="nav-item nav-link">Services</a>
+                    @include('partials.service-nav')
                     <a href="{{ url('careers') }}" class="nav-item nav-link">Careers</a>
                     <a href="{{ url('contact') }}" class="nav-item nav-link">Contact</a>
                     <div class="nav-item dropdown">

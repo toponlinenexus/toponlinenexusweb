@@ -31,14 +31,15 @@
         </div>
         <div class="col-12">
             <select name="service" class="form-select bg-light border-0" style="height: 55px;" required>
-                <option value="" disabled @selected(!old('service'))>Select A Service</option>
-                <option value="web-development" @selected(old('service') === 'web-development')>Web Development</option>
-                <option value="digital-marketing" @selected(old('service') === 'digital-marketing')>Digital Marketing</option>
-                <option value="seo" @selected(old('service') === 'seo')>SEO Optimization</option>
-                <option value="mobile-apps" @selected(old('service') === 'mobile-apps')>Mobile App Development</option>
-                <option value="ai-integration" @selected(old('service') === 'ai-integration')>AI Integration</option>
-                <option value="data-analytics" @selected(old('service') === 'data-analytics')>Data Analytics</option>
-                <option value="other" @selected(old('service') === 'other')>Other</option>
+                @php $selectedService = old('service', request('service')); @endphp
+                <option value="" disabled @selected(! $selectedService)>Select A Service</option>
+                <option value="web-development" @selected($selectedService === 'web-development')>Web Development</option>
+                <option value="digital-marketing" @selected($selectedService === 'digital-marketing')>Digital Marketing</option>
+                <option value="seo" @selected($selectedService === 'seo')>SEO Optimization</option>
+                <option value="mobile-apps" @selected($selectedService === 'mobile-apps')>Mobile App Development</option>
+                <option value="ai-integration" @selected($selectedService === 'ai-integration')>AI Integration</option>
+                <option value="data-analytics" @selected($selectedService === 'data-analytics')>Data Analytics</option>
+                <option value="other" @selected($selectedService === 'other')>Other</option>
             </select>
         </div>
         <div class="col-12">

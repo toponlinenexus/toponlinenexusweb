@@ -1,4 +1,9 @@
 @extends('layout.master')
+
+@section('title', 'Our Services | TopOnlineNexus')
+@section('meta_description', 'Explore TopOnlineNexus services: AI integration, data analytics, web development, mobile apps, and digital marketing. Professional IT solutions in Karachi and worldwide.')
+@section('meta_keywords', 'IT services, web development, AI integration, digital marketing, mobile apps, data analytics, Karachi, Pakistan')
+
 @section('content')
     <div class="container-fluid position-relative p-0">
         @include('layout.header')
@@ -7,9 +12,9 @@
             <div class="row py-5">
                 <div class="col-12 pt-lg-5 mt-lg-5 text-center">
                     <h1 class="display-4 text-white animated zoomIn">Services</h1>
-                    <a href="" class="h5 text-white">Home</a>
+                    <a href="{{ url('/') }}" class="h5 text-white">Home</a>
                     <i class="far fa-circle text-white px-2"></i>
-                    <a href="" class="h5 text-white">Services</a>
+                    <a href="{{ url('services') }}" class="h5 text-white">Services</a>
                 </div>
             </div>
         </div>
@@ -23,76 +28,7 @@
                 <h1 class="mb-0">Professional Digital & IT Solutions for Your Business</h1>
             </div>
             <div class="row g-5">
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                    <div
-                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-robot text-white"></i>
-                        </div>
-                        <h4 class="mb-3">AI Integration</h4>
-                        <p class="m-0">Bring artificial intelligence into your business with TopOnlineNexus. We integrate AI chatbots, automation, and custom intelligent tools that streamline workflows, improve customer experience, and drive smarter decisions.
-                        </p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                    <div
-                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-chart-pie text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Data Analytics</h4>
-                        <p class="m-0">Turn data into actionable insights with our analytics services. We help businesses track performance, understand customer behavior, and make smarter digital marketing decisions.
-                        </p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div
-                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-code text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Web Development</h4>
-                        <p class="m-0">TopOnlineNexus builds fast, responsive, and SEO-friendly websites tailored to your brand. From business sites to e-commerce platforms, we deliver modern web solutions that drive results.
-                        </p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                    <div
-                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fab fa-android text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Apps Development</h4>
-                        <p class="m-0">Get custom mobile apps for Android and iOS that engage users and grow your business. Our app development team creates scalable, user-friendly solutions for startups and enterprises.
-                        </p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                    <div
-                        class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-search text-white"></i>
-                        </div>
-                        <h4 class="mb-3">SEO Optimization</h4>
-                        <p class="m-0">Improve your Google rankings and organic traffic with proven SEO strategies. We optimize your website structure, content, and keywords to help customers find you online.
-                        </p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
+                @include('partials.service-cards')
                 <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
                     <div
                         class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
@@ -167,26 +103,5 @@
         </div>
     </div>
     <!-- Testimonial End -->
-
-
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5 mb-5">
-            <div class="bg-white">
-                <div class="owl-carousel vendor-carousel">
-                    <img src="img/vendor-1.jpg" alt="">
-                    <img src="img/vendor-2.jpg" alt="">
-                    <img src="img/vendor-3.jpg" alt="">
-                    <img src="img/vendor-4.jpg" alt="">
-                    <img src="img/vendor-5.jpg" alt="">
-                    <img src="img/vendor-6.jpg" alt="">
-                    <img src="img/vendor-7.jpg" alt="">
-                    <img src="img/vendor-8.jpg" alt="">
-                    <img src="img/vendor-9.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
 
 @endsection
