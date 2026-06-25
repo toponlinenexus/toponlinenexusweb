@@ -69,8 +69,8 @@
                                 <li class="breadcrumb-item active text-white-50" aria-current="page">{{ $service['name'] }}</li>
                             </ol>
                         </nav>
-                        <div class="mt-4 animated slideInUp">
-                            <a href="{{ url('quote') }}?service={{ $service['quote_service'] }}" class="btn btn-primary py-3 px-5 me-2">Get Free Quote</a>
+                        <div class="service-btn-group d-flex flex-column flex-sm-row gap-2 justify-content-center align-items-center mt-4 animated slideInUp">
+                            <a href="{{ url('quote') }}?service={{ $service['quote_service'] }}" class="btn btn-primary py-3 px-5">Get Free Quote</a>
                             <a href="tel:+923365554271" class="btn btn-outline-light py-3 px-5">Call Us</a>
                         </div>
                     </div>
@@ -297,9 +297,9 @@
                     </div>
                 @endforeach
             </div>
-            <div class="text-center mt-5">
+            <div class="service-btn-group d-flex flex-column flex-sm-row gap-2 justify-content-center align-items-center mt-5">
                 <a href="{{ url('services') }}" class="btn btn-primary py-3 px-5">View All Services</a>
-                <a href="{{ url('contact') }}" class="btn btn-outline-primary py-3 px-5 ms-2">Contact Our Team</a>
+                <a href="{{ url('contact') }}" class="btn btn-outline-primary py-3 px-5">Contact Our Team</a>
             </div>
         </div>
     </section>

@@ -177,10 +177,10 @@
         font-size: 1.1rem !important;
     }
 
-    .service-hero .btn {
-        display: block;
+    .service-btn-group .btn {
         width: 100%;
-        margin: 0 0 0.75rem !important;
+        max-width: 320px;
+        margin: 0 !important;
     }
 
     .service-overview-media,
