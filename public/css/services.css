@@ -1,0 +1,163 @@
+/*** Service Detail Pages ***/
+.service-hero {
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.service-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(9, 30, 62, .82), rgba(9, 30, 62, .65));
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.min-vh-service-hero {
+    min-height: 70vh;
+    padding: 120px 0 80px;
+}
+
+.service-hero-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.service-hero .breadcrumb-item + .breadcrumb-item::before {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.service-hero .breadcrumb-item a:hover {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+.service-benefit-card {
+    transition: .5s;
+    border: 1px solid transparent;
+}
+
+.service-benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(9, 30, 62, .12) !important;
+    border-color: rgba(6, 163, 218, 0.2);
+}
+
+.service-process-number {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.service-process-step {
+    transition: .5s;
+}
+
+.service-process-step:hover {
+    box-shadow: 0 5px 20px rgba(9, 30, 62, .08);
+    transform: translateY(-3px);
+}
+
+.service-tech-badge {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #fff;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: .3s;
+}
+
+.service-tech-badge:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+.service-industry-card {
+    transition: .5s;
+}
+
+.service-industry-card:hover {
+    background: #fff !important;
+    box-shadow: 0 8px 25px rgba(9, 30, 62, .1);
+    transform: translateY(-5px);
+}
+
+.service-overview-media {
+    position: relative;
+    min-height: 420px;
+    background: var(--light);
+}
+
+.service-overview-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.service-faq .accordion-button:not(.collapsed) {
+    background-color: rgba(6, 163, 218, 0.08);
+    color: var(--primary);
+}
+
+.service-faq .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(6, 163, 218, 0.25);
+}
+
+@media (max-width: 991.98px) {
+    .min-vh-service-hero {
+        min-height: 60vh;
+        padding: 100px 0 60px;
+    }
+
+    .service-hero h1.display-3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .min-vh-service-hero {
+        min-height: 55vh;
+        padding: 90px 0 50px;
+    }
+
+    .service-hero h1.display-3 {
+        font-size: 2rem;
+    }
+
+    .service-hero .fs-4 {
+        font-size: 1.1rem !important;
+    }
+
+    .service-hero .btn {
+        display: block;
+        width: 100%;
+        margin: 0 0 0.75rem !important;
+    }
+
+    .service-overview-media,
+    .service-overview-img {
+        min-height: 280px;
+    }}
