@@ -83,8 +83,8 @@
     <section class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" aria-labelledby="service-overview-heading">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="section-title position-relative pb-3 mb-4">
+                <div class="col-lg-6 wow fadeInUp text-center text-lg-start service-overview-col" data-wow-delay="0.1s">
+                    <div class="section-title position-relative pb-3 mb-4 text-center text-lg-start">
                         <h5 class="fw-bold text-primary text-uppercase">Overview</h5>
                         <h2 id="service-overview-heading" class="mb-0">{{ $service['overview_heading'] }}</h2>
                     </div>
@@ -122,7 +122,7 @@
                 @foreach ($service['benefits'] as $index => $benefit)
                     <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="{{ number_format(($index % 3 + 1) * 0.2, 1) }}s">
                         <div class="service-benefit-card bg-white rounded h-100 p-4 shadow-sm">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-4"
+                            <div class="service-benefit-icon bg-primary rounded d-flex align-items-center justify-content-center mb-4"
                                 style="width: 60px; height: 60px;">
                                 <i class="fa {{ $benefit['icon'] }} text-white fa-lg"></i>
                             </div>
@@ -205,8 +205,8 @@
     <section class="container-fluid py-5 bg-primary wow fadeInUp" data-wow-delay="0.1s" aria-labelledby="service-why-heading">
         <div class="container py-5">
             <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="section-title position-relative pb-3 mb-4">
+                <div class="col-lg-6 wow fadeInUp text-center text-lg-start service-why-col" data-wow-delay="0.1s">
+                    <div class="section-title position-relative pb-3 mb-4 text-center text-lg-start">
                         <h5 class="fw-bold text-white text-uppercase">Why TopOnlineNexus</h5>
                         <h2 id="service-why-heading" class="mb-0 text-white">{{ $service['why_choose_heading'] }}</h2>
                     </div>
