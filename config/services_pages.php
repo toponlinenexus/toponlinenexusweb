@@ -192,7 +192,7 @@ return [
             ['name' => 'Restaurants & Hospitality', 'description' => 'Menu sites, online ordering, reservation systems, and delivery integration.'],
             ['name' => 'Startups & SaaS', 'description' => 'Landing pages, product dashboards, and scalable web applications.'],
             ['name' => 'Corporate & Enterprise', 'description' => 'Professional business websites, intranets, and client portals.'],
-            ['name' => 'Non-Profit Organizations', 'description' => 'Donation platforms, event pages, and community engagement sites.'],
+            ['name' => 'Transportation', 'description' => 'Logistics platforms, fleet management systems, and online booking portals.'],
         ],
         'why_choose' => [
             'Over 10 years of experience delivering websites for diverse industries and business sizes',
