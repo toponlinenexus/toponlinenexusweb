@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('title', 'Top Online Nexus | AI Solutions, Software Development, Web Development, Mobile Apps & Digital Marketing')
-@section('meta_description', 'Top Online Nexus is a leading software development and AI solutions company delivering custom AI integration, web development, mobile app development, digital marketing, SEO optimization, and data analytics services. We build scalable, secure, and innovative technology solutions that help businesses automate workflows, improve customer engagement, increase online visibility, and accelerate digital transformation.')
+@section('meta_description', 'Top Online Nexus provides AI solutions, custom software development, web development, mobile app development, digital marketing, SEO, and data analytics to help businesses automate processes, increase growth, and accelerate digital transformation with secure, scalable, and innovative technology solutions.')
 @section('meta_keywords', 'AI Solutions, Artificial Intelligence, AI Integration, AI Automation, Generative AI, Machine Learning, Software Development, Custom Software Development, Web Development, Website Development, Full Stack Development, Frontend Development, Backend Development, Mobile App Development, Android App Development, iOS App Development, Cross-Platform App Development, Digital Marketing, SEO Services, Search Engine Optimization, Local SEO, Technical SEO, Content Marketing, Social Media Marketing, Data Analytics, Business Intelligence, Data Visualization, Dashboard Development, Cloud Solutions, Enterprise Software, UI UX Design, E-Commerce Development, API Development, Database Development, Business Automation, IT Consulting, Technology Solutions, Top Online Nexus')
 
 @section('content')
