@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>@yield('title', 'TopOnlineNexus')</title>
+    <title>@yield('title', 'Top Online Nexus | AI Solutions, Software Development, Web Development, Mobile Apps & Digital Marketing')</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="@yield('meta_keywords', 'web development, digital marketing, SEO, AI integration, IT solutions, Karachi, Pakistan')" name="keywords">
-    <meta content="@yield('meta_description', 'TopOnlineNexus delivers professional web development, digital marketing, SEO, and AI-powered IT solutions for businesses in Karachi and worldwide.')" name="description">
+    <meta content="@yield('meta_keywords', 'AI Solutions, Artificial Intelligence, AI Integration, AI Automation, Generative AI, Machine Learning, Software Development, Custom Software Development, Web Development, Website Development, Full Stack Development, Frontend Development, Backend Development, Mobile App Development, Android App Development, iOS App Development, Cross-Platform App Development, Digital Marketing, SEO Services, Search Engine Optimization, Local SEO, Technical SEO, Content Marketing, Social Media Marketing, Data Analytics, Business Intelligence, Data Visualization, Dashboard Development, Cloud Solutions, Enterprise Software, UI UX Design, E-Commerce Development, API Development, Database Development, Business Automation, IT Consulting, Technology Solutions, Top Online Nexus')" name="keywords">
+    <meta content="@yield('meta_description', 'Top Online Nexus is a leading software development and AI solutions company delivering custom AI integration, web development, mobile app development, digital marketing, SEO optimization, and data analytics services. We build scalable, secure, and innovative technology solutions that help businesses automate workflows, improve customer engagement, increase online visibility, and accelerate digital transformation.')" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
